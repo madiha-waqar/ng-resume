@@ -1,0 +1,181 @@
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+}
+
+.resume-header {
+  background: url("../../assets/images/cc-bg-1.jpg") no-repeat center
+    center/cover;
+  position: relative;
+  text-align: center;
+  height: 55vh;
+  margin: 0 auto;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Add the overlay */
+.resume-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 80, 39, 0.4);
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between buttons and menu */
+  align-items: center; /* Vertically center items */
+  padding: 15px 20px;
+  background-color: transparent !important;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-brand {
+  font-size: 0.9rem;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  padding: 0.5rem 0.7rem;
+  line-height: 1.625rem;
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.3
+  ); /* Light grey background on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow around the item */
+  border-radius: 5px; /* Optional: to soften the corners of the box */
+}
+
+/* Profile Section */
+.profile-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  padding-top: 100px;
+  left: 50%;
+}
+
+/* Profile Image */
+.profile-image img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  transition: all 0.3s ease-out;
+}
+
+.content-center {
+  font-family: inherit;
+  line-height: 1.1;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #378c3f;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  margin: 5px 2px;
+  border: none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
+  color: #ffffff;
+  width: 150px; /* Set fixed width for both buttons */
+  text-align: center; /* Center text inside the button */
+}
+
+.btn-primary:hover {
+  background-color: #28a745; /* Darker green on hover */
+}
+
+.profile-page .button-container {
+  text-align: center;
+  margin-top: 127px;
+}
+
+.page-header .container {
+  height: 100%;
+  /* z-index: 1; */
+  /* text-align: center; */
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 15px; /* Spacing between the icons */
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #888;
+  color: #fff;
+  font-size: 24px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-icon i {
+  font-size: 24px;
+}
+
+.btn-icon:hover {
+  background-color: #888;
+  color: #28a745;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow with blur and spread */
+}

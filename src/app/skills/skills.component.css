@@ -1,0 +1,59 @@
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.progress-container {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.progress-container .progress-badge {
+  color: #378C3F;  
+}
+
+.progress-container .progress {
+  height: 5px;
+  background-color: rgba(55, 140, 63, 0.4);
+}
+
+.progress-container .progress-bar {
+  background-color: #378C3F;
+  width: 0;
+  height: 5px;
+  transition: width 2s ease-in-out;
+}
+
+.progress-container .progress-value {
+  float: right;
+  color: #378C3F;
+  position: relative;
+  top: -15px;
+  z-index: 1;
+}
+
+
+/* Animation */
+[data-aos][data-aos-duration='2000'],
+body[data-aos-duration='2000'] [data-aos] {
+  transition-duration: 2s;
+}
+
+.aos-animate .progress-bar {
+  width: 100%; /* The width will be dynamically set by inline styles */
+}

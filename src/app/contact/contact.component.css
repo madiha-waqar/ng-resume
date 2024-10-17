@@ -1,0 +1,55 @@
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.cc-contact-information {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.cc-contact-information .cc-contact {
+  padding: 8% 0 8% 20%;
+}
+
+h4,
+.h4 {
+  font-size: 1.714em;
+  line-height: 1.45em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+h4 + .category,
+h4.title + .category,
+.h4 + .category,
+.h4.title + .category {
+  margin-top: -10px;
+}
+
+span {
+  color: #555;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #DDDDDD;
+  opacity: 1;
+  filter: alpha(opacity=100); 
+  font-size: 0.9rem;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.bg-green {
+  background-color: #378c3f;
+  color: white;
+  width: 100px;
+  border-radius: 0;
+}
