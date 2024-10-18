@@ -1,13 +1,10 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-reference',
-  templateUrl: './reference.component.html',
-  styleUrls: ['./reference.component.css']
+  selector: "app-reference",
+  templateUrl: "./reference.component.html",
+  styleUrls: ["./reference.component.css"],
 })
-
-export class ReferenceComponent implements AfterViewInit {
-  ngAfterViewInit() {
-    console.log('ReferenceComponent initialized');
-  }
+export class ReferenceComponent {
+  @Input() references: any;
 }

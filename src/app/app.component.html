@@ -1,10 +1,18 @@
 
-<app-header></app-header>
-<app-about></app-about>
-<app-skills></app-skills>
-<app-portfolio></app-portfolio>
-<app-experience></app-experience>
-<app-education></app-education>
-<app-reference></app-reference>
-<app-contact></app-contact>
+<app-header [basicInfo]="resumeData.basicInfo"></app-header>
+<app-about [basicInfo]="resumeData.basicInfo"></app-about>
+<app-skills [skills]="resumeData.skills"></app-skills>
+<app-portfolio [projects]="resumeData.projects"></app-portfolio>
+<app-experience [experiences]="resumeData.experiences"></app-experience>
+<app-education [education]="resumeData.education"></app-education>
+<app-reference [references]="resumeData.references"></app-reference>
+<app-contact [basicInfo]="resumeData.basicInfo"></app-contact>
 <app-footer></app-footer>
+
+
+<!-- 
+<app-header [basicInfo]="resumeData.basicInfo"></app-header>
+<app-skills [skills]="resumeData.skills"></app-skills>
+
+
+<app-footer [basicInfo]="resumeData.basicInfo"></app-footer> -->

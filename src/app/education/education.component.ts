@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  selector: "app-education",
+  templateUrl: "./education.component.html",
+  styleUrls: ["./education.component.css"],
 })
 export class EducationComponent {
-
+  @Input() education: any;
 }

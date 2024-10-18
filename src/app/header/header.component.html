@@ -69,15 +69,15 @@
               ><img src="../../assets/images/anthony.jpg" alt="Image"
             /></a>
           </div>
-          <div class="h2 title">Anthony Barnett</div>
+          <div class="h2 title">{{basicInfo.name}}</div>
           <p class="category text-white text">
-            Web Developer, Graphic Designer, Photographer
+            {{basicInfo.title}}
           </p>
 
-          <button type="button" class="btn btn-primary btn-sm">Hire Me</button>
-          <button type="button" class="btn btn-primary btn-sm">
-            Downlaod CV
-          </button>
+          <!-- Click events -->
+          <button (click)="hireMe()" type="button" class="btn btn-primary btn-sm">Hire Me</button>
+          <button (click)="downloadCV()" type="button" class="btn btn-primary btn-sm">Downlaod CV</button>
+         
         </div>
       </div>
 

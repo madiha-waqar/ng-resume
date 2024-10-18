@@ -36,11 +36,14 @@
         </div>
       </div>
     </div>
+    
     <div class="tab-content gallery mt-5">
       <div class="tab-pane active" id="web-development">
         <div class="ml-auto mr-auto">
           <div class="row">
-            <div class="col-md-6">
+    
+             <!-- Loop through the projects array using *ngFor -->
+            <div class="col-md-6" *ngFor="let project of projects">
               <div
                 class="porfolio-image img-raised"
                 data-aos="fade-up"
@@ -48,65 +51,17 @@
               >
                 <a href="#web-development">
                   <figure class="effect">
-                    <img src="../../assets/images/project-1.jpg" alt="Image" />
+                    <!-- Use dynamic binding for image source and project name -->
+                    <img [src]="'../../assets/images/' + project.image" [alt]="project.name" />
                     <figcaption>
-                      <div class="h4">Recent Project</div>
-                      <p>Web Development</p>
+                      <div class="h4">{{ project.name }}</div>
+                      <p>{{ project.category }}</p>
                     </figcaption>
-                  </figure></a
-                >
-              </div>
-              <div
-                class="porfolio-image img-raised"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-              >
-                <a href="#web-development">
-                  <figure class="effect">
-                    <img src="../../assets/images/project-2.jpg" alt="Image" />
-                    <figcaption>
-                      <div class="h4">Startup Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a
-                >
+                  </figure>
+                </a>
               </div>
             </div>
-            <div class="col-md-6">
-              <div
-                class="porfolio-image img-raised"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-              >
-                <a href="#web-development">
-                  <figure class="effect">
-                    <img src="../../assets/images/project-3.jpg" alt="Image" />
-                    <figcaption>
-                      <div class="h4">Food Order Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a
-                >
-              </div>
-              <div
-                class="porfolio-image img-raised"
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-              >
-                <a href="#web-development">
-                  <figure class="effect">
-                    <img src="../../assets/images/project-4.jpg" alt="Image" />
-                    <figcaption>
-                      <div class="h4">Web Advertising Project</div>
-                      <p>Web Development</p>
-                    </figcaption>
-                  </figure></a
-                >
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>

@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component} from '@angular/core';
+import { resumeData } from 'src/data/resumedata';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +8,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular resume assignment';
-
-  @ViewChild('appAlertRef') appRef!: ElementRef;
-
-  ngOnInit() {
-
-  }
-
-
+  resumeData = resumeData;
 }
 
 
